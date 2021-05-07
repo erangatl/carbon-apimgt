@@ -211,7 +211,13 @@ class APIThumb extends Component {
                 <CardContent className={classes.apiDetails}>
                     <div className={classes.textWrapper}>
                         <Link to={overviewPath}>
-                            <Typography gutterBottom variant='h4' className={classes.thumbHeader} title={api.name}>
+                            <Typography
+                                gutterBottom
+                                variant='h4'
+                                id='itest-api-name'
+                                className={classes.thumbHeader}
+                                title={api.name}
+                            >
                                 {api.name}
                             </Typography>
                         </Link>

@@ -175,7 +175,7 @@ class BusinessInformation extends React.Component {
                                 <TextField
                                     disabled={isRestricted(['apim:api_create', 'apim:api_publish'], api)}
                                     fullWidth
-                                    id='name'
+                                    id='businessOwnerName'
                                     label={(
                                         <>
                                             <FormattedMessage
@@ -208,7 +208,7 @@ class BusinessInformation extends React.Component {
                                     error={!this.isValidBusinessOwnerEmail}
                                     disabled={isRestricted(['apim:api_create', 'apim:api_publish'], api)}
                                     fullWidth
-                                    id='name'
+                                    id='businessOwnerEmail'
                                     label={(
                                         <>
                                             <FormattedMessage
@@ -250,7 +250,7 @@ class BusinessInformation extends React.Component {
                                 <TextField
                                     disabled={isRestricted(['apim:api_create', 'apim:api_publish'], api)}
                                     fullWidth
-                                    id='name'
+                                    id='technicalOwnerName'
                                     label={(
                                         <>
                                             <FormattedMessage
@@ -282,7 +282,7 @@ class BusinessInformation extends React.Component {
                                     error={!this.isValidTechnicalOwnerEmail}
                                     disabled={isRestricted(['apim:api_create', 'apim:api_publish'], api)}
                                     fullWidth
-                                    id='name'
+                                    id='technicalOwnerEmail'
                                     label={(
                                         <FormattedMessage
                                             id={
@@ -333,6 +333,7 @@ class BusinessInformation extends React.Component {
                                             <Button
                                                 variant='contained'
                                                 color='primary'
+                                                id='businessInfoSaveButton'
                                                 onClick={() => this.handleSubmit(updateAPI)}
                                                 disabled={
                                                     isRestricted(['apim:api_create', 'apim:api_publish'], api)

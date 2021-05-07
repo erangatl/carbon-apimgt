@@ -145,6 +145,7 @@ class SchemaValidation extends React.Component {
                             className={classes.actionSpace}
                             control={(
                                 <Switch
+                                    id='itest-enable-schema-validation'
                                     disabled={isRestricted(['apim:api_create'], apiFromContext)}
                                     checked={
                                         api.enableSchemaValidation === undefined ? false : api.enableSchemaValidation
